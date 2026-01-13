@@ -1,4 +1,4 @@
-# Notes Web Application
+# Notes-DynamoDB Web Application
 
 A simple Notes Web Application built with FastAPI (backend), React (frontend), and AWS DynamoDB.
 
@@ -12,7 +12,7 @@ A simple Notes Web Application built with FastAPI (backend), React (frontend), a
 ## Tech Stack
 
 - **Backend**: Python FastAPI
-- **Frontend**: React (JavaScript only)
+- **Frontend**: React 
 - **Styling**: Tailwind CSS
 - **Database**: AWS DynamoDB
 
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 AWS_ACCESS_KEY_ID=your_access_key
 AWS_SECRET_ACCESS_KEY=your_secret_key
-AWS_REGION=us-east-1
+AWS_REGION=ap-south-2
 ```
 
 5. Run the backend server:
