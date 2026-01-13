@@ -5,7 +5,7 @@ from database import create_table_if_not_exists
 
 app = FastAPI(title="Notes API", version="1.0.0")
 
-# CORS middleware to allow frontend requests
+'''# CORS middleware to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://localhost:3000"],
@@ -13,7 +13,20 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+'''
+FRONTEND_URL = os.getenv("FRONTEND_URL")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        FRONTEND_URL
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Include routes
 app.include_router(router, prefix="/api", tags=["notes"])
 
