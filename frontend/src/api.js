@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://notes-dynamodb-v.onrender.com/api";
 
 export const createNote = async (title, content) => {
   const response = await fetch(`${API_BASE_URL}/notes`, {
