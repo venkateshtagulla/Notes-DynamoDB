@@ -33,7 +33,7 @@ function NotesList({ onSelectNote, selectedNoteId }) {
 
   return (
     <div className="flex flex-col h-full bg-gray-50 border-r border-gray-200">
-      <div className="p-4 border-b bg-rose-900 border-gray-200 bg-white">
+      <div className="p-4 border-b bg-red-900 border-gray-200 bg-white">
         <h1 className="text-2xl font-bold text-white mb-4">🗒️
  Notes</h1>
         
